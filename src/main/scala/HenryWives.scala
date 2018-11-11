@@ -25,6 +25,7 @@ object HenryWives{
       case(false, false, true, false) => false
       case(true,false,true, false) => false
       case(false,true, false, true)=> false
+      case _ => false
     }
 
   }
