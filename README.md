@@ -1,6 +1,8 @@
 # HenryWives
 Which of Henry's wifes survived? A pattern matching exercise in scala.
 
+Simple pattern matching task to identify if given a name and years of marriage (rounded down), one can identify whether Henry's wife died or survived
+
 The six women who were married to Henry VIII were, in chronological order:
 
 1 	Catherine of Aragon ;	11 June 1509 – 23 May 1533 ;	Annulled 
