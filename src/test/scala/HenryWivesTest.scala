@@ -16,7 +16,7 @@ class HenryWivesTest extends FunSuite with Matchers {
   }
 
   test("Anne of Cleves; 6 January 1540 – 9 July 1540; Annulled"){
-    HenryWives.survived("Anne",1) should be (true)
+    HenryWives.survived("Anne",0) should be (true)
   }
 
   test(" Catherine Howard; 28 July 1540 – 23 November 1541; Beheaded") {

@@ -1,6 +1,6 @@
 object HenryWives{
   def survived (name: String, marriage: Int):Boolean ={
-    //(name == "Catherine" && marriage >=2) || (name == "Anne" && marriage <=1)
+    //(name == "Catherine" && marriage >=2) || (name == "Anne" && marriage <1)
 
 //            name match {
 //              case "Catherine" => marriage match {
@@ -8,18 +8,18 @@ object HenryWives{
 //                case _ => true
 //              }
 //              case "Anne" => marriage match {
-//                case 1 => true
+//                case 0 => true
 //                case _ => false
 //              }
 //              case _ => false
 //            }
 //            name match{
 //              case "Catherine" if marriage >= 2  => true
-//              case "Anne" if marriage <= 1 => true
+//              case "Anne" if marriage < 1 => true
 //              case _ => false
 //            }
 
-    (name == "Catherine" , name =="Anne" , marriage <= 1, marriage >=2) match{
+    (name == "Catherine" , name =="Anne" , marriage < 1, marriage >=2) match{
       case (true, false, false, true) => true
       case(false, true, true, false) => true
       case(false, false, true, false) => false
